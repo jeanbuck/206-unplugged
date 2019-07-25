@@ -124,6 +124,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
   text-align: center;
 }
 
@@ -241,9 +242,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+}
+
+footer .social-icons p i{
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -329,6 +338,11 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+
+  .features i{
+    font-size: 3.75em;
+    margin-bottom: 40px;
   }
 
   .features p {
@@ -585,18 +599,10 @@ footer .copyright {
   }
 
   /* Features */
-  .features{
-    background: url('../img/unplugged-retreat-features.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
+
 
   .features h2 {
     margin: 0 20px 20px 0;
-    margin-bottom: 60px;
   }
 
   .features article {
@@ -605,26 +611,13 @@ footer .copyright {
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
-    margin: 30px 0;
-    width: 55%;
+
   }
 
-  .features .features-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    .features i{
+    margin-bottom: 30px;
   }
 
-  .features i{
-    font-size: 3.75em;
-    margin-bottom: 40px;
-  }
-
-  .features p{
-    text-align: center;
-    margin: 0;
-  }
 
   .features .features-item-description {
       width: 50%;
@@ -674,6 +667,11 @@ footer .copyright {
 
   footer p {
       line-height: 1.285;
+  }
+
+  footer .social-icons{
+    justify-content: space-between;
+    width: 12.5em;
   }
 
   footer .copyright {
